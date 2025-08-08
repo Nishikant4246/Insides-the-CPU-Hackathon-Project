@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cpu_insides</title>
+        <!-- Preconnect of Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+        <!-- Preconnect of Bootstrap (Framework) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="">
+         <!--  Preconnect of CDN  -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+       integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+       crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Linking of CSS File -->
+        <link rel="stylesheet" href="index.css">
+     </head>
+    <body>
+        <div class="main-container">
+            <div class="header">
+                <!-- <div class="ncer-logo">
+                    <img src="ncerlogo.png" class="ncer-logo-image" alt="ncer-logo" width="100px">
+                </div> -->
+                <div class="nav">
+                    <nav>
+                        <a href="Index.html">Home</a>
+                        <a href="Aboutindex.html">About</a>
+                        <a href="Team.html">Team</a>
+                        <a href="Help.html">Help</a>
+                    </nav>
+                    <div class="title">
+                        <h3>Computer Architecture & Organization</h3>
+                    </div>
+                </div>
+                <!-- <div class="team-logo">
+                    <img src="trailblazers-logo.png" class="team-logo-image"team-logo">
+                </div> -->
+            </div>
+            <div class="main">
+                <div class="sidebar" id="sidebar">
+                    <div class="sidebar-nav-div">
+                        <nav class="sidebar-nav">
+                             
+                        </nav>
+                    </div>
+
+                    <div class="d-grid gap-2 all-buttons" id="sidebar_buttons">
+
+                        <div class="cross-button-div">
+                        <button type="button" class="cross-button" onclick="menuHide()"><i class="fa-regular cross fa-circle-xmark"></i></button>
+                        </div>
+
+                        <p id="parts">Physical Parts of CPU</p>
+
+                        <button class="btn btn-primary cdDrivePort" type="button" onclick="changeToCdDrivePort()">Cd Drive Port</button>
+
+                        <button class="btn btn-primary frame" type="button" onclick="changeToFrame()">Frame</button>
+
+                        <button class="btn btn-primary hardDrive" type="button" onclick="changeToHardDrive()">Hard-drive</button>
+
+                        <button class="btn btn-primary heatSink" type="button" onclick="changeToHeatSink()">Heat Sink</button>
+
+                        <button class="btn btn-primary indicatingLights" type="button" onclick="changeToIndicatingLigts()">Indicating Lights</button>
+
+                        <button class="btn btn-primary motherBoard" type="button" onclick="changeToMotherBoard()">Motherboard</button>
+
+                        <button class="btn btn-primary processor" type="button" onclick="changeToProcessor()">Processor</button>
+
+                        <button class="btn btn-primary psu" type="button" onclick="changeToPsu()">PSU</button>
+
+                        <button class="btn btn-primary ram" type="button" onclick="changeToRam()">Ram</button>
+
+                        <button class="btn btn-primary soundCards" type="button" onclick="changeToSoundCards()">Sound Cards</button>
+
+                        <button class="btn btn-primary systemFans" type="button" onclick="changeToSystemFans()">System Fan</button>
+
+                        <button class="btn btn-primary usb&Ports" type="button" onclick="changeTousbPorts()">Usb & Ports</button>
+
+                        <p id="Components">Components of cpu</p>
+
+                        <button class="btn btn-primary alu" type="button" onclick="changeToAlu()">ALU</button>
+
+                        <button class="btn btn-primary cache" type="button" onclick="changeToCache()">Cache</button>
+
+                        <button class="btn btn-primary clock" type="button" onclick="changeToClock()">Clock</button>
+
+                        <button class="btn btn-primary cu" type="button" onclick="changeToCu()">CU</button>
+
+                        <button class="btn btn-primary mu" type="button" onclick="changeToMu()">MU</button>
+
+                        <button class="btn btn-primary registers" type="button" onclick="
+                        changeToRegisters()">Registers</button>
+
+                      </div>
+                </div>
+                <div class="main-content-container">
+                    <div class="bar-button-div" id="bar-button" style="display: none;">
+                        <button type="button" class="bar-button" onclick="menuShow()"><i class="fa-solid fa-bars"></i>button>
+                    </div>
+                    <div class="main-content">
+                        
+                        <div class="threed-model">
+                            <iframe src="https://sketchfab.com/models/2e11c4583ebe4fc98c073fd8a2690a06/embed?autospin=1&autostart=1&preload=1" id="myIframe" frameborder="0" class="iFrame1"></iframe>
+                        </div>
+                        <div class="threed-animation" id="threed-animation">
+                            <iframe width="1045" height="588" src="https://www.youtube.com/embed/d86ws7mQYIg" id="myIframe1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div id="text-area" class="text-area">
+                            #info
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

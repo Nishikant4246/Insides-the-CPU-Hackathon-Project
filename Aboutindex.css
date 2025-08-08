@@ -1,0 +1,61 @@
+*{
+font-family: 'Montserrat', sans-serif;  
+margin: 0;
+background-image: url(Bgimage.jpg);
+block-size: contain;
+color: white;
+/* background-size: contain; */
+/* overflow: hidden; */
+}
+/* Welcome */
+.welcome{
+margin-top: 4px;
+display: flex;
+justify-content: center;
+font-size: large;
+animation: welcome 2s ease-in-out 2s infinite normal ;
+font-weight: 800;
+}
+@keyframes welcome {
+ from{
+ color: gray;
+} 
+to{
+color: black;
+}  
+}
+.About{
+height: 140vh;
+width: 100%;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+#Aim{
+text-align: center;
+}
+div h2{
+padding: 1rem;
+margin-left: 30px;
+display: inline-block;
+}
+div ul {
+margin-left: 50px;
+}
+#footer{
+text-align: center;
+animation: footerAnimate 2s ease-in 2s infinite normal ;
+}
+@keyframes footerAnimate {
+from {
+color: rgb(201, 186, 186);
+} 
+to {
+color: rgb(211, 14, 14);
+}  
+}
+#Thank_you{
+text-align: end;
+margin-right: 100px;
+}
